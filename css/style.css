@@ -1,0 +1,66 @@
+a.thumbnail:hover img {
+	opacity: .6;
+}
+
+.header-unit {
+  height: 690px;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 0x; 
+}
+#video-container {
+    position: absolute;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+video {
+    position:absolute;
+}
+video.fillWidth {
+    width: 100%;
+}
+
+#mion {
+  float: right;
+  width: 40%;
+  margin: 0 0 20px 20px;
+}
+
+#mion-blurb p {
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-size:13px;
+  font-weight: 300;
+}
+
+.thumbnail .caption {
+  font-size: 11px;
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+}
+
+
+#person1, #person2, #person3 {
+    font-size: 14px;
+    margin-bottom:20px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    background: #f6f6f6;
+    padding: 20px;
+}
+
+#person1 h3, #person2 h3, #person3 h3 {
+  border-bottom: 1px solid #ddd;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.nameplate {
+  display: block;
+  padding: 10px;
+  z-index: 100;
+  position: absolute;
+}
