@@ -5,3 +5,15 @@
 .writer-pictures img:hover {
 	opacity: 0.7;
 }
+
+#name {
+	text-align: center;
+}
+
+.row.intro {
+	margin-top: 2em;
+}
+
+.row.video {
+	margin-top: 2em;
+}
