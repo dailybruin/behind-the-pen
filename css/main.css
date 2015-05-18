@@ -1,3 +1,19 @@
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+#writers-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#name-info {
+	font-style: italic;
+	color: #5c5c5c;
+}
+
 #name {
 	text-align: left;
 	margin-bottom: 0em;
