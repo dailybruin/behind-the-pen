@@ -3,6 +3,10 @@ p {
 	font-weight: 400;
 }
 
+#video-byline {
+	color: #828282;
+}
+
 a:hover#redirection {
 	border-bottom: 1px solid #008CBA;
 	padding-bottom: 0.2em;
@@ -40,6 +44,8 @@ a:hover#redirection {
 	.writer-pictures {
 		max-width: 60%;
 	}
+
+	
 }
 
 img:hover#writers-logo {
@@ -48,7 +54,7 @@ img:hover#writers-logo {
 
 #writers-logo {
 	max-height: 130px;
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 }
 
 .row.intro {
