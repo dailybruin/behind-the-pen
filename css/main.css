@@ -22,3 +22,13 @@
 .row.video {
 	margin-top: 2em;
 }
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent #000;
+	opacity: 0.3;
+}
+
+.fp-controlArrow.fp-prev {
+	border-color: transparent #000 transparent transparent;
+	opacity: 0.3;
+}
