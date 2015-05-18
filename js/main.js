@@ -1,3 +1,4 @@
-$(document).ready(function() {
-	console.log( "ready test" );
-});
+    $('#fullpage').fullpage({
+    	scrollOverflow: true,
+    	anchors:['firstPage', 'secondPage']
+    });
