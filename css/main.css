@@ -3,6 +3,11 @@ p {
 	font-weight: 400;
 }
 
+a:hover#redirection {
+	border-bottom: 1px solid #008CBA;
+	padding-bottom: 0.2em;
+}
+
 #writers-logo {
 	display: block;
 	margin-left: auto;
@@ -29,6 +34,15 @@ p {
 
 .writer-pictures img:hover {
 	opacity: 0.7;
+}
+
+img:hover#writers-logo {
+	opacity: 1.0;
+}
+
+#writers-logo {
+	max-height: 130px;
+	margin-bottom: 2em;
 }
 
 .row.intro {
