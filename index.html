@@ -24,8 +24,16 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
+    <!--Sidescroll CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/lazyYT.css" type="text/css">
+
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
+
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400|Amatic+SC' rel='stylesheet' type='text/css'>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -35,7 +43,13 @@
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <!--Sidescroll Script-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/vendors/jquery.slimscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.js"></script>
+
+    <!-- lazyYT js -->
+    <script src="js/usac-2015/lazyYT.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -59,60 +73,142 @@
 <!-- MAIN BODY OF THE PAGE HERE -->
 
 <body id="page-top" data-spy="scroll" >
+    <div id="fullpage">
+        <div class="section" data-anchor="firstPage">
+            <p id="backtoprime"><a href="http://prime.dailybruin.com" id="redirection">&laquo Back to prime</a></p>
+                
+                <div class="small-12 columns text-center">
+                    <img id="writers-logo" src="img/writers_logo_black.svg"/>
+                </div>
 
-    <div class="row writer-pictures">
-        <div class="small-4 columns">
-            <a href="#content" class="smoothScroll"><img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/></a>
-        </div>
-        <div class="small-4 columns">
-            <img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/>
-        </div>
-        <div class="small-4 columns">
-            <img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/>
-        </div>
-    </div>
-
-    <div class="row main-content" id="content">
-
-        <div id="writer-one">
-            <div class="row intro">
-                <div class="small-4 columns">
-                    <img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/>
-                </div> 
-                <div class="small-8 columns">
-                    <h2 id="name"> First Last </h2>
-                    <p> 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </div> 
-            </div>
-
-            <div class="row video">
-                <div class="flex-video widescreen">
-                    <iframe src="https://www.youtube.com/embed/JeO9nnImzFM" frameborder="0" allowfullscreen></iframe>
+            <div class="row writer-pictures">
+             
+                <div class="medium-4 columns">
+                    <a href="#secondPage/0" class="smoothScroll" onclick="switchPage(this)"><img src="http://dailybruin.com/images/2015/05/web.prime_.poetry.ruben_.1.AK_.small_.jpg"/></a>
+                </div>
+                <div class="medium-4 columns">
+                    <a href="#secondPage/1" class="smoothScroll" onclick="switchPage(this)"><img src="http://dailybruin.com/images/2015/05/web.prime_.poetry.tina_.1.AK_.small_.jpg"/></a>
+                </div>
+                <div class="medium-4 columns">
+                    <a href="#secondPage/2" class="smoothScroll" onclick="switchPage(this)"><img src="http://dailybruin.com/images/2015/05/prime.poetry.fanny_.2.AK_.small_.jpg"/></a>
                 </div>
             </div>
+        </div>    
+        <div class="section" data-anchor="secondPage">
+            <div class="slide"> 
+                <div id="writer-one">
+                    <div class="row intro">
+                        <div class="medium-4 columns hide-for-small">
+                            <img src="http://dailybruin.com/images/2015/05/web.prime_.poetry.ruben_.1.AK_.small_.jpg"/>
+                        </div> 
+                        <div class="small-12 medium-8 columns">
+                            <h2 id="name">Ruben Rodriguez</h2>
+                            <p id="name-info">26, Fourth-year English student</p>
+                            <hr style="margin-top: 0.5em; margin-bottom: 0.5em;"/>
+                            <p>Instead of hiring a babysitter, current Los Angeles Poet Laureate Luis Rodriguez brought his 10-year-old son to slam poetry events in Chicago in the late ‘90s.</p>
+                            <p>Rodriguez grew up balancing gritty realism – reading his dad’s memoir “Always Running: La Vida Loca, Gang Days in L.A.” at age nine – with his mother’s more academic influence.</p>
+                            <p>“There was a part of me that was embarrassed about writing because my dad writes and my mom writes,” Rodriguez said. “I didn’t want to fit the stereotype of my own family.”</p>
+                            <p>Post-high school graduation in 2006 and his family’s relocation to Los Angeles, Rodriguez became a video game tester, and found his day-to-day monotonous. He brought books to work.</p>
+                            <p>“That’s what spurred me to go back to school,” Rodriguez said. “I realized being a writer is much more interesting to me, much more mentally engaging.”</p>
+                        </div> 
+                    </div>
+                    
+                    <div class="row video">
+                        <div class="flex-video widescreen">
+                            <iframe src="https://www.youtube.com/embed/n_qoJ6vjPeg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
 
-            <div class="row story">
-                <div class="small-7 columns">
-                    <p> 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mi velit. Ut vitae posuere massa, ac pretium turpis. Integer id consectetur eros. Ut hendrerit non nulla finibus semper. Aenean eget viverra justo. Ut id risus varius, posuere sapien non, ultricies lectus. Nullam id accumsan lorem, at pharetra tortor. Nullam diam eros, vestibulum sit amet pretium sit amet, scelerisque a odio. Aliquam in felis nec metus dapibus interdum. Suspendisse magna libero, efficitur sit amet eleifend eu, rutrum a metus. Pellentesque quis erat eget ligula facilisis malesuada. Cras vitae malesuada ipsum, eu sollicitudin nibh. Sed nec luctus nunc. Donec sodales urna id felis dignissim, ut posuere lorem consequat. Integer id rutrum nisl, id euismod nulla. Nam malesuada bibendum auctor.
-                    </p>
+                    <div class="row story">
+                        <div class="small-12 columns">
+                            <p>Written in the fall of 2014 for his Los Angeles poetry course, “Losing the Will” incorporates UCLA-specific details – Rodriguez spent a day by Northern Lights observing the hill he walked up to get to campus and wrote the poem in one quick draft.</p>
+                            <p>After reading Reyner Banham’s “Los Angeles: The Architecture of Four Ecologies” – which breaks Los Angeles down into subsections from the freeways to the beach – Rodriguez selected UCLA as its own “ecology.” Inspired by the Frank O’Hara poem “The Day Lady Died,” Rodriguez imitated O’Hara’s experiential narration for “Losing the Will.”</p>
+                            <p>Rodriguez said he remembers, as a child, being struck by the stark contrast between the old buildings on campus with everything else in modern Los Angeles. The poem explores the transportive feel of UCLA’s aesthetic.</p>
+                            <p>“It’s what drew me here in the first place,” Rodriguez said. “And why I’m still here.”</p>
+                            <p>Now in his final year, Rodriguez said the poem simultaneously carries an ironic edge; He explores students’ literal constant upward battle to their classes – UCLA’s hills.</p>
+                            <p>“There’s that balance,” Rodriguez said. “Of appreciating everything but also just being tired of it.”</p>
+                        </div>
+                    </div>
+                    <hr/>
                 </div>
-                <div class="small-5 columns">
-                    <img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/>
-                </div> 
+            </div>
+            <div class="slide"> 
+                <div id="writer-two">
+                    <div class="row intro">
+                        <div class="medium-4 columns hide-for-small">
+                            <img src="http://dailybruin.com/images/2015/05/web.prime_.poetry.tina_.1.AK_.small_.jpg"/>
+                        </div> 
+                        <div class="small-12 medium-8 columns">
+                            <h2 id="name">T.m. Lawson</h2>
+                            <p id="name-info">26, Third-year English student, creative writing concentration</p>
+                            <hr style="margin-top: 0.5em; margin-bottom: 0.5em;"/>
+                            <p>At 12, Lawson wrote her first compilation of impromptu short stories and poems to show her grandfather.</p>
+                            <p>Lawson said she remembers him saying it had been a long time since he had read anything he actually liked.</p>
+                            <p>Maybe, Lawson said, he was just being nice, but she comes from a family of artists – or at least people preoccupied with writing and reading – her grandfather himself is an English professor at California State University, Long Beach.</p>
+                            <p>A different kind of artist, Lawson’s grandmother painted watercolors. Lawson said this juxtaposition created an internal tension with her grandfather’s love of Emily Dickinson; Lawson said she had a desire to be visual in terms of words, if not paint.</p>
+                            <p>“That’s why poetry is so strong for me,” Lawson said. “I feel I can encapsulate a picture in a phrase or just the right word.”</p>
+                        </div> 
+                    </div>
+
+                    <div class="row video">
+                        <div class="flex-video widescreen">
+                            <iframe src="https://www.youtube.com/embed/jRcvDyX7QnE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="row story">
+                        <div class="small-12 columns">
+                            <p>Last winter, Lawson’s professor prompted the class to create visceral images contained by line length and enjambment for her poetry workshop.</p>
+                            <p>“I usually ignore most of the prompt,” Lawson said. “I just go with my gut.”</p>
+                            <p>Inspired by “Linnets,” Lawson began with Larry Levis’ symbolic bird to create “Songbird Cannibalism,” set at the family dinner table.</p>
+                            <p>Lawson said the first few words were the hardest, but once the first line was finished, the ideas started pouring out. Although fictional, Lawson said she identifies with the narrator of her poem – a daughter who returns home as an outsider.</p>
+                            <p>“When I’m influenced it kind of creates a funnel,” Lawson said. “My imagination and my memories are the leash that hold the style together.”</p>
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
+            </div>
+            <div class="slide"> 
+                <div id="writer-three">
+                    <div class="row intro">
+                        <div class="medium-4 columns hide-for-small">
+                            <img src="http://dailybruin.com/images/2015/05/prime.poetry.fanny_.2.AK_.small_.jpg"/>
+                        </div> 
+                        <div class="small-12 medium-8 columns">
+                            <h2 id="name">Fanny Garcia</h2>
+                            <p id="name-info">37, Fourth-year English student</p>
+                            <hr style="margin-top: 0.5em; margin-bottom: 0.5em;"/>
+                            <p>Garcia first found writing through acting with an east Los Angeles theater group.</p>
+                            <p>With the group, Garcia said she saw plays at different local theaters that left her with questions regarding female representation – and who is doing the representing.</p>
+                            <p>After her friend challenged her to write her own play, Garcia agreed: she wrote a series of 10 monologues about women living with HIV/AIDS.</p>
+                            <p>“That was transformational for me,” Garcia said.</p>
+                            <p>Garcia said her script led to mediocre poetry, which eventually led her to practicing prose and memoir within UCLA’s English Department – despite once disbelieving in the four-year college path.</p>
+                            <p>As a teenager, Garcia said her first experience seeing non-white faces in higher education was the predominantly black cast of the ‘80s television show, “Different Worlds,” and no one in her family had been, or went on, to college.</p>
+                            <p>Garcia said as a shy girl in the library, unnoticed throughout her L.A.U.S.D. public school education, she returned to the academic world with life experience.</p>
+                            <p>“I fell through the cracks,” Garcia said. “I’m much more confident now.”</p>
+                        </div> 
+                    </div>
+
+                    <div class="row video">
+                        <div class="flex-video widescreen">
+                            <iframe src="https://www.youtube.com/embed/h0oCQ0r0Qgg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="row story">
+                        <div class="small-12 columns">
+                            <p>As a kid, Garcia remembers coming to UCLA with her family for picnics at the end of self-guided star map tours from one of the vendors on Sunset Boulevard.</p>
+                            <p>“I started wondering what it would be like for someone like me to come here,” Garcia said.</p>
+                            <p>In “From Searching for Stars to Finding Me,” Garcia began with that iconic image of star maps her family got on each L.A. trip.</p>
+                            <p>Garcia said she felt a disconnect between the brown faces, like hers, that she saw selling the star maps, gardening in Bel Air and cleaning the celebrity homes they drove by, and the faces at UCLA.</p>
+                            <p>The first in her family to attend college, Garcia said she brings her Honduran background and the voices of her mother and sisters to the classroom. She makes a place for their stories amongst the Chaucer and Shakespeare.</p>
+                            <p>“I’ve always said that it takes a village to send a grown woman to college,” Garcia said.</p>
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
             </div>
         </div>
-
-        <div id="writer-two">
-
-        </div>
-
-        <div id="writer-three">
-
-        </div>
-
     </div>
 
     <!-- Footer -->
@@ -124,3 +220,5 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </body>
 
 </html>
+
+<script src="js/main.js"></script>

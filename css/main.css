@@ -1,3 +1,33 @@
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+a:hover#redirection {
+	border-bottom: 1px solid #008CBA;
+	padding-bottom: 0.2em;
+}
+
+#writers-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#name-info {
+	font-style: italic;
+	color: #5c5c5c;
+}
+
+#name {
+	text-align: left;
+	margin-bottom: 0em;
+}
+
+#name-info {
+	margin-bottom: 0.2em;
+}
+
 .writer-pictures {
 	max-width: 100%;
 }
@@ -6,8 +36,19 @@
 	opacity: 0.7;
 }
 
-#name {
-	text-align: center;
+@media only screen and (max-width: 40em) {
+	.writer-pictures {
+		max-width: 60%;
+	}
+}
+
+img:hover#writers-logo {
+	opacity: 1.0;
+}
+
+#writers-logo {
+	max-height: 130px;
+	margin-bottom: 2em;
 }
 
 .row.intro {
@@ -16,4 +57,18 @@
 
 .row.video {
 	margin-top: 2em;
+}
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent #000;
+	opacity: 0.3;
+}
+
+.fp-controlArrow.fp-prev {
+	border-color: transparent #000 transparent transparent;
+	opacity: 0.3;
+}
+
+#redirection {
+	margin-left: 17px;
 }
