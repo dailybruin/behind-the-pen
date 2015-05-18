@@ -1,13 +1,18 @@
+#name {
+	text-align: left;
+	margin-bottom: 0em;
+}
+
+#name-info {
+	margin-bottom: 0.2em;
+}
+
 .writer-pictures {
 	max-width: 100%;
 }
 
 .writer-pictures img:hover {
 	opacity: 0.7;
-}
-
-#name {
-	text-align: center;
 }
 
 .row.intro {
