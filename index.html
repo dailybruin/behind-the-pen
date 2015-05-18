@@ -66,21 +66,21 @@
 <!-- MAIN BODY OF THE PAGE HERE -->
 
 <body id="page-top" data-spy="scroll" >
-
     <div id="fullpage">
-        <div class="section"><div class="row writer-pictures">
-            <div class="small-4 columns">
-                    <a href="#content" class="smoothScroll" onclick="switchPage(this)"><img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/></a>
+        <div class="section" data-anchor="firstPage">
+            <div class="row writer-pictures">
+                <div class="small-4 columns">
+                    <a href="#secondPage/0" class="smoothScroll" onclick="switchPage(this)"><img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/></a>
                 </div>
                 <div class="small-4 columns">
-                    <a href="#content" class="smoothScroll" onclick="switchPage(this)"><img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/></a>
+                    <a href="#secondPage/1" class="smoothScroll" onclick="switchPage(this)"><img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/></a>
                 </div>
                 <div class="small-4 columns">
-                    <a href="#content" class="smoothScroll" onclick="switchPage(this)"><img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/></a>
+                    <a href="#secondPage/2" class="smoothScroll" onclick="switchPage(this)"><img src="https://pbs.twimg.com/profile_images/417823878418022400/t5yp2vVg.jpeg"/></a>
                 </div>
             </div>
         </div>    
-        <div class="section" id="content">
+        <div class="section" data-anchor="secondPage">
             <div class="slide"> 
                 <div id="writer-one">
                     <div class="row intro">
@@ -125,7 +125,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <footer>
